@@ -1,0 +1,5 @@
+{
+    "APP_CLIENT_ID": "6b05cebce2af1aeae269",
+    "APP_CLIENT_SECRET": "8896a0788cf0b8818363dd4b58bd1eecc4ec6428",
+    "APP_REDIRECT_URI": "http://127.0.0.1:4200/home"
+}
