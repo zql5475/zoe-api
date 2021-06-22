@@ -69,7 +69,8 @@ module.exports = {
     },
 
     searchRepositories: async (searchKey, accessCode) => {
-        const result = await axios.get(`https://api.github.com/search/repositories?q=${searchKey}`, {
+        const queryString = 'q=' + encodeURIComponent(searchKey);
+        const result = await axios.get(`https://api.github.com/search/repositories?${queryString}`, {
             headers: {'Authorization': `token ${accessCode}`}
         });
         if (result.status === 200 && result.data && result.data.items) {
